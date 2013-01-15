@@ -1,0 +1,53 @@
+doctype 5
+html(lang="de")
+  head
+    meta(charset='utf8')
+
+    title hamburg.freifunk.net
+
+    link(rel='stylesheet', href='/css/ffhh.css')
+
+  wrapper
+
+    header
+
+      name
+        h1 hamburg.freifunk.net
+
+        nav
+          ul
+            li
+              a(href='#') wiki
+            li
+              a(href='#') karte
+            li
+              a(href='#') kontakt
+
+
+        | <object type="image/svg+xml" data="/img/skyline.svg" id="logo" >Your browser does not support SVG</object>
+
+
+      bar
+        ul
+          li
+            a(href='#') Freie Kommunikation, die
+          li
+            a(href='#') unsere Stadt vernetzt.
+          li
+            a(href='#') Mach mit!
+
+
+
+
+    body
+
+      content
+
+        != yield
+
+    //- add other scripts through require.js, not here
+    script(data-main="js/main", src="js/require.js")
+
+    //- this must be included for live reload to work in developement
+    //- it will be automatically ignored when deployed
+    != livereload

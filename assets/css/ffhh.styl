@@ -1,0 +1,86 @@
+@import '_settings'
+
+//normalize()
+base()
+
+grid()
+
+column-width: 60
+gutter-width: 20
+columns: 12
+total-width: 100%
+
+wrapper
+  padding: 1.25%
+
+body
+  background-color: rgb(237,237,237)
+
+header
+  font-family: 'avenir'
+  top:100px
+
+header ul
+  margin: 0
+  padding; 0
+  margin: 0 auto
+  border-width: 1px
+  border-style: solid
+
+header li
+  display: inline
+  list-style-type: none
+  margin-right: 40px
+
+header a
+  text-decoration: none
+  color: rgb(168, 169, 171)
+  font-size: 18px
+
+header h1
+  font-weight: normal
+  font-size: 3.5em
+  border-width: 1px
+  border-style: solid
+
+
+
+
+nav
+  column(12)
+  float: left
+  height: 80px
+
+name
+  column(12)
+  border-width: 1px
+  border-style: solid
+  padding-left: 30px
+
+name object
+  display: inline
+  float:right
+  width:300px
+  border-width: 1px
+  border-style: solid
+
+logo
+  //column(3)
+  border-width: 1px
+  border-style: solid
+  width: 300px
+  height:200px
+
+bar
+  column(12)
+  height: 150px
+  background-color: rgb(51,51,51)
+
+bar ul
+  margin-left: 150px
+  margin-right: 150px
+  margin-top: 60px
+
+content
+  clear: both
+  float: left

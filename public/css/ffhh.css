@@ -1,0 +1,114 @@
+body {
+  font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+  font-size: 96.9%;
+  font-size: 15px;
+  color: #555;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  width: 100%;
+  zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+column-width: 60,
+gutter-width: 20,
+columns: 12,
+total-width: 100%,
+wrapper {
+  padding: 1.25%;
+}
+body {
+  background-color: #ededed;
+}
+header {
+  font-family: 'avenir';
+  top: 100px;
+}
+header ul {
+  margin: 0;
+padding
+  margin: 0 auto;
+  border-width: 1px;
+  border-style: solid;
+}
+header li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 40px;
+}
+header a {
+  text-decoration: none;
+  color: #a8a9ab;
+  font-size: 18px;
+}
+header h1 {
+  font-weight: normal;
+  font-size: 3.5em;
+  border-width: 1px;
+  border-style: solid;
+}
+nav {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 940px;
+  margin: 0 10px;
+  *width: 940px -correction;
+  *margin: 0 10px -correction;
+  float: left;
+  height: 80px;
+}
+name {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 940px;
+  margin: 0 10px;
+  *width: 940px -correction;
+  *margin: 0 10px -correction;
+  border-width: 1px;
+  border-style: solid;
+  padding-left: 30px;
+}
+name object {
+  display: inline;
+  float: right;
+  width: 300px;
+  border-width: 1px;
+  border-style: solid;
+}
+logo {
+  border-width: 1px;
+  border-style: solid;
+  width: 300px;
+  height: 200px;
+}
+bar {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 940px;
+  margin: 0 10px;
+  *width: 940px -correction;
+  *margin: 0 10px -correction;
+  height: 150px;
+  background-color: #333;
+}
+bar ul {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 60px;
+}
+content {
+  clear: both;
+  float: left;
+}
