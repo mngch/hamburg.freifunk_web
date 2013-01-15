@@ -34,6 +34,7 @@ header {
   top: 100px;
 }
 header ul {
+  display: inline;
   margin: 0;
 padding
   margin: 0 auto;
@@ -51,6 +52,7 @@ header a {
   font-size: 18px;
 }
 header h1 {
+  display: inline;
   font-weight: normal;
   font-size: 3.5em;
   border-width: 1px;
@@ -65,7 +67,6 @@ nav {
   *width: 940px -correction;
   *margin: 0 10px -correction;
   float: left;
-  height: 80px;
 }
 name {
   display: inline;
