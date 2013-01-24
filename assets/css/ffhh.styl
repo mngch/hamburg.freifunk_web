@@ -1,88 +1,102 @@
 @import '_settings'
 
-//normalize()
+normalize()
 base()
 
-grid()
 
-column-width: 60
-gutter-width: 20
-columns: 12
-total-width: 100%
-
-wrapper
-  padding: 1.25%
+darkgray = #333333
+lightgray = #918e8e
+white = #ffffff
+pink = #dd0066
 
 body
   background-color: rgb(237,237,237)
+  overflow-x: hidden
+  //font-family: 'avenir'
+  font-family: 'SourceCodeProRegular'
+  color: darkgray
+  -webkit-animation: fadeIn 1s ease
+
 
 header
-  font-family: 'avenir'
-  top:100px
-
-header ul
-  display: inline
-  margin: 0
-  padding; 0
+  padding: 50px
+  max-width: 960px
+  max-height: 150px
   margin: 0 auto
-  border-width: 1px
-  border-style: solid
+  background: url(/img/skyline.svg) no-repeat right top
+  background-size: contain
 
-header li
-  display: inline
-  list-style-type: none
-  margin-right: 40px
+  .title
+    reset-link()
 
-header a
-  text-decoration: none
-  color: rgb(168, 169, 171)
-  font-size: 18px
-
-header h1
-  display: inline
-  font-weight: normal
-  font-size: 3.5em
-  border-width: 1px
-  border-style: solid
+    .main
+      font-size: 3em
+      font-weight: normal
 
 
+  nav
+    text-align: right
+    ul
+      inline-list()
+      color: lightgray
+      font-size: 2em
+      li
+        display: inline-block
+        padding-left: 30px
+        a
+          color: lightgray
+          text-decoration: none
+          transition()
+
+#bar
+  background: darkgray
+  color: white
+  padding: 50px
+
+  ul
+    inline-list(0px)
+    max-width: 700px
+    margin: 0 auto
+    font-size: 1.3em
+    li
+      display: inline-block
+      width: 33%
+      text-align: center
+      a
+        color: white
+        text-decoration: none
+        transition()
 
 
-nav
-  column(12)
-  float: left
-  //height: 80px
 
-name
-  column(12)
-  border-width: 1px
-  border-style: solid
-  padding-left: 30px
+#content
+  max-width: 860px
+  padding: 0 40px
+  margin: 0 auto
+  margin-bottom: 160px
 
-name object
-  display: inline
-  float:right
-  width:300px
-  border-width: 1px
-  border-style: solid
+  h3
+    font-weight: normal
+    color: pink
+    font-size: 2em
+    margin-bottom: 15px
+    margin-top: 25px
 
-logo
-  //column(3)
-  border-width: 1px
-  border-style: solid
-  width: 300px
-  height:200px
+  p
+    color: darkgray
+    font-size: 1.2em
+    line-height: 1.6em
 
-bar
-  column(12)
-  height: 150px
-  background-color: rgb(51,51,51)
+figure
+  figure(darkgray)
 
-bar ul
-  margin-left: 150px
-  margin-right: 150px
-  margin-top: 60px
 
-content
-  clear: both
-  float: left
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+
+@import "adaptive"
+@import "fonts"

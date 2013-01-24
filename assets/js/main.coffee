@@ -1,4 +1,3 @@
-#= require "_helper"
 
 # Add scripts to load to this array. These can be loaded remotely like jquery
 # is below, or can use file paths, like 'vendor/underscore'
