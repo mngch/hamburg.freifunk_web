@@ -23,7 +23,7 @@ header
   max-width: 960px
   max-height: 150px
   margin: 0 auto
-  background: url(/img/skyline.svg) no-repeat right top
+  background: url(../img/skyline.svg) no-repeat right top
   background-size: contain
 
   .title
@@ -32,6 +32,7 @@ header
     .main
       font-size: 3em
       font-weight: normal
+      font-family: 'SourceCodeProLight'
 
 
   nav
@@ -55,7 +56,7 @@ header
 
   ul
     inline-list(0px)
-    max-width: 700px
+    max-width: 900px
     margin: 0 auto
     font-size: 1.3em
     li
@@ -65,12 +66,14 @@ header
       a
         color: white
         text-decoration: none
+        display: block
+        hover-lighten: 30%
         transition()
 
 
 
 #content
-  max-width: 860px
+  max-width: 430px
   padding: 0 40px
   margin: 0 auto
   margin-bottom: 160px
@@ -79,17 +82,18 @@ header
     font-weight: normal
     color: pink
     font-size: 2em
-    margin-bottom: 15px
-    margin-top: 25px
+    margin-bottom: 11px
+    //margin-top: 25px
+    padding-top: 25px
 
   p
     color: darkgray
+    font-family: 'arial'
     font-size: 1.2em
-    line-height: 1.6em
+    line-height: 1.4em
 
-figure
-  figure(darkgray)
-
+  img
+    border: 5px solid darkgray
 
 @keyframes fadeIn
   0%

@@ -1,1 +1,18 @@
-@media screen and (max-width:800px){#bar ul li{width:100%}header{background:transparent!important;padding:10px}}
+@media screen and (max-width: 800px) {
+  #bar ul li {
+    width: 100%;
+  }
+  header {
+    background: transparent !important;
+    padding: 10px;
+  }
+  header .title .main {
+    font-size: 1.8em;
+  }
+  header nav ul li {
+    font-size: 0.7em;
+  }
+  #content {
+    padding: 0 5px;
+  }
+}
