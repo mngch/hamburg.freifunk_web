@@ -196,6 +196,18 @@ body {
   -ms-text-size-adjust: 100%;
 }
 body {
+  width: 100%;
+  zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+body {
   background-color: #ededed;
   overflow-x: hidden;
   font-family: 'SourceCodeProRegular';
@@ -320,7 +332,7 @@ header nav ul li a {
   background-color: #707070;
 }
 #content {
-  max-width: 430px;
+  max-width: 900px;
   padding: 0 40px;
   margin: 0 auto;
   margin-bottom: 160px;
@@ -335,11 +347,31 @@ header nav ul li a {
 #content p {
   color: #333;
   font-family: 'arial';
+  text-align: justify;
   font-size: 1.2em;
   line-height: 1.4em;
 }
 #content img {
   border: 5px solid #333;
+  margin-top: 11px;
+}
+#content #left {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+  *width: 47.91666666666667% -correction;
+  *margin: 0 1.0416666666666665% -correction;
+}
+#content #right {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+  *width: 47.91666666666667% -correction;
+  *margin: 0 1.0416666666666665% -correction;
 }
 @media screen and (max-width: 800px) {
   #bar ul li {
@@ -357,6 +389,24 @@ header nav ul li a {
   }
   #content {
     padding: 0 5px;
+  }
+  #content #left {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+    *width: 97.91666666666666% -correction;
+    *margin: 0 1.0416666666666665% -correction;
+  }
+  #content #right {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+    *width: 97.91666666666666% -correction;
+    *margin: 0 1.0416666666666665% -correction;
   }
 }
 @font-face {
