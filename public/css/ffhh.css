@@ -211,6 +211,7 @@ body {
   background-color: #ededed;
   overflow-x: hidden;
   font-family: 'SourceCodeProRegular';
+  vertical-align: baseline;
   color: #333;
   -webkit-animation: fadeIn 1s ease;
 }
@@ -349,10 +350,10 @@ header nav ul li a {
 }
 #content p {
   color: #333;
-  font-family: 'georgia';
-  text-align: justify;
-  font-size: 1.2em;
-  line-height: 1.4em;
+  font-family: 'DroidSerifRegular', 'Times New Roman', serif;
+  font-size: 1.25em;
+  line-height: 1.35em;
+  vertical-align: baseline;
 }
 #content img {
   border: 5px solid #333;
@@ -452,6 +453,34 @@ header nav ul li a {
   font-family: 'SourceCodeProBlack';
   src: url("../font/SourceCodePro-Black-webfont.eot");
   src: url("../font/SourceCodePro-Black-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DroidSerifRegular';
+  src: url("../font/DroidSerif-Regular-webfont.eot");
+  src: url("../font/DroidSerif-Regular-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DroidSerifItalic';
+  src: url("../font/DroidSerif-Italic-webfont.eot");
+  src: url("../font/DroidSerif-Italic-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DroidSerifBold';
+  src: url("../font/DroidSerif-Bold-webfont.eot");
+  src: url("../font/DroidSerif-Bold-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DroidSerifBoldItalic';
+  src: url("../font/DroidSerif-BoldItalic-webfont.eot");
+  src: url("../font/DroidSerif-BoldItalic-webfont.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
