@@ -187,30 +187,12 @@ table {
   border-spacing: 0;
 }
 body {
-  font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
-  font-size: 96.9%;
-  font-size: 15px;
-  color: #555;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-body {
-  width: 100%;
-  zoom: 1;
-}
-body:before,
-body:after {
-  content: "";
-  display: table;
-}
-body:after {
-  clear: both;
-}
-body {
   background-color: #ededed;
   overflow-x: hidden;
   font-family: 'SourceCodeProRegular';
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   vertical-align: baseline;
   color: #333;
   -webkit-animation: fadeIn 1s ease;
