@@ -1,6 +1,6 @@
 @import '_settings'
 
-normalize()
+//normalize()
 //base()
 
 
@@ -12,8 +12,9 @@ pink = #dd0066
 body
   background-color: rgb(237,237,237)
   overflow-x: hidden
+  margin: 0;
   //font-family: 'avenir'
-  font-family: 'SourceCodeProRegular'
+  font-family: 'DroidSerifRegular', 'Times New Roman', serif
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -45,6 +46,7 @@ header
 
   nav
     text-align: right
+    font-family: 'SourceCodeProRegular'
     ul
       inline-list()
       color: lightgray
@@ -55,6 +57,7 @@ header
         a
           color: lightgray
           text-decoration: none
+          hover-fade(0.7)
           transition()
 
 #bar
@@ -66,6 +69,7 @@ header
     inline-list(0px)
     max-width: 900px
     margin: 0 auto
+    font-family: 'arial'
     font-size: 1.3em
     //height: 40px
     li
@@ -77,18 +81,18 @@ header
         text-decoration: none
         display: block
         hover-lighten: 30%
-        transition()
 
 
 
 #content
-  max-width: 900px
+  max-width: 700px
   padding: 0 40px
   margin: 0 auto
   margin-bottom: 160px
 
   h3
     font-weight: normal
+    font-family: 'SourceCodeProRegular'
     color: pink
     font-size: 2em
     margin-bottom: 11px
@@ -97,7 +101,7 @@ header
 
   p
     color: darkgray
-    font-family: 'DroidSerifRegular', 'Times New Roman', serif
+    
     font-size: 1.25em
     line-height: 1.35em
     vertical-align: baseline
@@ -106,11 +110,10 @@ header
     border: 5px solid darkgray
     margin-top:11px
 
-  #left
-      column(6)
 
-  #right
-      column(6)
+  ul
+    font-size: 1.25em
+
 
 @keyframes fadeIn
   0%

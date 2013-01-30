@@ -16,22 +16,4 @@
   #content {
     padding: 0 5px;
   }
-  #content #left {
-    display: inline;
-    float: left;
-    overflow: hidden;
-    width: 940px;
-    margin: 0 10px;
-    *width: 940px -correction;
-    *margin: 0 10px -correction;
-  }
-  #content #right {
-    display: inline;
-    float: left;
-    overflow: hidden;
-    width: 940px;
-    margin: 0 10px;
-    *width: 940px -correction;
-    *margin: 0 10px -correction;
-  }
 }
