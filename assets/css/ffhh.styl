@@ -41,7 +41,7 @@ header
     .main
       font-size: 3em
       font-weight: normal
-      font-family: 'SourceCodeProLight'
+      font-family: 'SourceCodeProRegular'
 
 
   nav
@@ -51,9 +51,10 @@ header
       inline-list()
       color: lightgray
       font-size: 2em
+      padding-left: 30px
       li
         display: inline-block
-        padding-left: 30px
+        padding-right: 70px
         a
           color: lightgray
           text-decoration: none
@@ -67,10 +68,10 @@ header
 
   ul
     inline-list(0px)
-    max-width: 900px
+    max-width: 880px
     margin: 0 auto
-    font-family: 'arial'
-    font-size: 1.3em
+    font-family: 'SourceCodeProRegular'
+    font-size: 1.1em
     //height: 40px
     li
       display: inline-block
@@ -80,7 +81,8 @@ header
         color: white
         text-decoration: none
         display: block
-        hover-lighten: 30%
+        //hover-lighten: 30%
+        hover-fade(0.7)
 
 
 
