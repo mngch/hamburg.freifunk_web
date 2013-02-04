@@ -1,7 +1,7 @@
 @import '_settings'
 
-normalize()
-base()
+//normalize()
+//base()
 
 
 darkgray = #333333
@@ -12,18 +12,27 @@ pink = #dd0066
 body
   background-color: rgb(237,237,237)
   overflow-x: hidden
+  margin: 0;
   //font-family: 'avenir'
-  font-family: 'SourceCodeProRegular'
+  font-family: 'DroidSerifRegular', 'Times New Roman', serif
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  vertical-align: baseline
   color: darkgray
+
   -webkit-animation: fadeIn 1s ease
 
 
 header
-  padding: 50px
+  padding-top: 10px
+  padding-bottom: 20px
+  padding-left: 30px
   max-width: 960px
   max-height: 150px
   margin: 0 auto
-  background: url(/img/skyline.svg) no-repeat right top
+  margin-top: 20px
+  background: url(../img/skyline.svg) no-repeat right top
   background-size: contain
 
   .title
@@ -32,32 +41,38 @@ header
     .main
       font-size: 3em
       font-weight: normal
+      font-family: 'SourceCodeProRegular'
 
 
   nav
     text-align: right
+    font-family: 'SourceCodeProRegular'
     ul
       inline-list()
       color: lightgray
       font-size: 2em
+      padding-left: 30px
       li
         display: inline-block
-        padding-left: 30px
+        padding-right: 70px
         a
           color: lightgray
           text-decoration: none
+          hover-fade(0.7)
           transition()
 
 #bar
   background: darkgray
   color: white
-  padding: 50px
+  padding: 30px
 
   ul
     inline-list(0px)
-    max-width: 700px
+    max-width: 880px
     margin: 0 auto
-    font-size: 1.3em
+    font-family: 'SourceCodeProRegular'
+    font-size: 1.1em
+    //height: 40px
     li
       display: inline-block
       width: 33%
@@ -65,30 +80,41 @@ header
       a
         color: white
         text-decoration: none
-        transition()
+        display: block
+        //hover-lighten: 30%
+        hover-fade(0.7)
 
 
 
 #content
-  max-width: 860px
+  max-width: 700px
   padding: 0 40px
   margin: 0 auto
   margin-bottom: 160px
 
   h3
     font-weight: normal
+    font-family: 'SourceCodeProRegular'
     color: pink
     font-size: 2em
-    margin-bottom: 15px
-    margin-top: 25px
+    margin-bottom: 11px
+    //margin-top: 25px
+    padding-top: 25px
 
   p
     color: darkgray
-    font-size: 1.2em
-    line-height: 1.6em
+    
+    font-size: 1.25em
+    line-height: 1.35em
+    vertical-align: baseline
 
-figure
-  figure(darkgray)
+  img
+    border: 5px solid darkgray
+    margin-top:11px
+
+
+  ul
+    font-size: 1.25em
 
 
 @keyframes fadeIn
