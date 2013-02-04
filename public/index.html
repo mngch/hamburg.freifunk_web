@@ -1,3 +1,57 @@
-<!DOCTYPE html><html lang="de"><head><meta charset="utf8"><meta name="description" content="Freifunk ist ein Projekt, das versucht ein stadtweites Datennetz auf Basis von WLAN-Routern aufzubauen."><meta name="author" content="freifunk hamburg"><title>hamburg.freifunk.net</title><link rel="stylesheet" href="./css/ffhh.css"></head><body><header><a href="/" class="title"><h1 class="main">hamburg.freifunk.net</h1></a><nav><ul><li><a href="#">wiki</a></li><li><a href="#">karte</a></li><li><a href="#">kontakt</a></li></ul></nav></header><div id="bar"><ul><li><a href="#">Freie Kommunikation, die</a></li><li><a href="#">unsere Stadt vernetzt.</a></li><li><a href="#">Mach mit!</a></li></ul></div><div id="content"><h3 id="was">Was ist freifunk?</h3><p>Freifunk ist ein Projekt, das versucht ein stadtweites Datennetz auf Basis von WLAN-Routern aufzubauen. Dieses Netz soll eine freie Kommunikation innerhalb der ganzen Stadt und, mithilfe von Peerings zu anderen Städten, auch überregional ermöglichen. Um dies zu Erreichen, werden Freifunknoten (das sind die Router mit den Antennen), von freiwilligen an vielen Orten in der Stadt betrieben. Jedes WLAN-fähige Gerät, also beispielsweise Handy oder Notebook, kann sich in der Nähe eines solchen Knotens mit dem Netz verbinden und darüber mit anderen Teilnehmern kommunizieren. Auch ein Zugang ins Internet steht meistens zur Verfügung.
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf8">
+    <meta name="description" content="Freifunk ist ein Projekt, das versucht ein stadtweites Datennetz auf Basis von WLAN-Routern aufzubauen.">
+    <meta name="author" content="freifunk hamburg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hamburg.freifunk.net</title>
+    <link rel="stylesheet" href="./css/ffhh.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  </head>
+  <body>
+    <header><a href="./" class="title">
+        <h1 class="main">hamburg.freifunk.net</h1></a>
+      <nav>
+        <ul>
+          <li><a href="http://goo.gl/6nlDF">Karte</a></li>
+          <li><a href="http://wiki.freifunk.net/Freifunk_Hamburg">Wiki</a></li>
+          <li><a href="mailto:kontakt@hamburg.freifunk.net">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+<div id="bar">
+  <ul>
+    <li><a href="#was">Freie Kommunikation!</a></li>
+    <li><a href="#wo">Freifunk in Hamburg!</a></li>
+    <li><a href="#mitmachen">Mach mit!</a></li>
+  </ul>
+</div>
+<div id="content">
+  <h3><a name="was">Was ist freifunk?</a></h3><p>Freifunk ist eine nicht-kommerzielle Initiative für freie Funk- und Datennetzwerke.
+In vielen deutschen Städten gibt es bereits Freifunknetze.<br>Freifunk steht jedem Menschen offen, sei es als Nutzer_in oder als aktive_r Unterstützer_in
+durch eigene Freifunk-Knoten.
+Als Freifunk-Knoten dient ein dafür vorbereiteter WLAN-Router
+oder ein anderes WLAN fähiges Gerät. Die Vorbereitung ist einfach selbst durchzuführen,
+oder durch Hilfestellung unserer Gemeinschaft, z.B. in Form von vorbereiteten 
+WLAN-Routern zum Selbstkostenpreis.<br>Das Freifunk-Netz entsteht ohne zentrale Infrastruktur , ist unkomerziell
+und lebt von einer aktiven Gemeinschaft.
 </p>
-<h3 id="wo">Wo ist freifunk?</h3><figure><img src="/img/map.png"></figure><h3 id="warum">Warum freifunk?</h3><h3 id="mitmachen">Wie kann ich mitmachen?</h3></div></body><script data-main="js/main" src="js/require.js"></script></html>
+
+  <h3><a name="wo">Wo ist freifunk?</a></h3><a href="http://goo.gl/6nlDF" target="_blank"> <img src="./img/Karte.png", width="95%"></a>
+  <h3><a name="mitmachen">Wie kann ich mitmachen?</a></h3><p>Alle Menschen können Freifunker_innen werden, besondere technische Kenntnisse sind nicht notwendig.
+Es gibt viele Möglichkeiten mitzuwirken:  
+
+</p>
+<ul>
+<li>Besuche uns auch auf, auf <a href="https://facebook.com/FreifunkHamburg">Facebook</a> oder <a href="https://identi.ca/ffhh">indenti.ca</a>.</li>
+<li>Werde ein Teil des Netzwerks, indem du bei dir im Haus einen Freifunk-Knoten aufstellst.<br>Informationen zu empfohlenen Routern und der speziellen Freifunk-Firmware findest du im <a href="http://wiki.freifunk.net/Freifunk_Hamburg">Wiki</a>.</li>
+<li>Komme zu unserem Treffen jeden Montag um 19:00 Uhr in den <a href="http://www.hamburg.ccc.de/wegbeschreibung">Räumen des CCCHH</a><br>Wenn Ihr mit ÖPNV anreist, nehmt die U3 bis &quot;Mundsburg&quot;.
+Von dort sind es ca. 8 Minuten zu Fuß. Der Eingang zur Humboldtstraße 53 liegt in einem Innenhof, den Ihr durch eine Tor-Einfahrt erreicht.</li>
+</ul>
+
+</div>
+  </body>
+  <script data-main="js/main" src="js/require.js"></script><script>protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; address = protocol + window.location.host + window.location.pathname + '/ws'; socket = new WebSocket(address);
+socket.onmessage = function(msg) { msg.data == 'reload' && window.location.reload() }</script>
+</html>
