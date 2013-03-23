@@ -2,7 +2,7 @@ body {
   background-color: #ededed;
   overflow-x: hidden;
   margin: 0;
-  font-family: 'DroidSerifRegular', 'Times New Roman', serif;
+  font-family: 'SourceSansProRegular', 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -36,6 +36,10 @@ header .title:hover {
   text-decoration: none;
 }
 header .title:visited {
+  -webkit-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  -moz-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  -o-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
@@ -86,6 +90,10 @@ header nav ul li a {
   transition: all .3s ease;
 }
 header nav ul li a:hover {
+  -webkit-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  -moz-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  -o-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
@@ -130,6 +138,10 @@ header nav ul li a:hover {
   display: block;
 }
 #bar ul li a:hover {
+  -webkit-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  -moz-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  -o-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
@@ -147,6 +159,12 @@ header nav ul li a:hover {
   margin-bottom: 11px;
   padding-top: 25px;
 }
+#content h4 {
+  font-weight: normal;
+  font-family: 'SourceSansProSemibold';
+  color: #333;
+  font-size: 1.2em;
+}
 #content p {
   color: #333;
   font-size: 1.25em;
@@ -159,6 +177,38 @@ header nav ul li a:hover {
 }
 #content ul {
   font-size: 1.25em;
+}
+#content a {
+  text-decoration: none;
+  color: #d06;
+}
+#content #news {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.05);
+  -moz-box-shadow: inset 0 0 6px rgba(0,0,0,0.05);
+  -o-box-shadow: inset 0 0 6px rgba(0,0,0,0.05);
+  -ms-box-shadow: inset 0 0 6px rgba(0,0,0,0.05);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.05);
+  background-color: #eee8d5;
+  padding: 15px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  margin: 20px 0;
+  margin-top: 30px;
+  padding-top: 10px;
+  background: url("../img/megafon.svg") no-repeat 95% 2%;
+  -webkit-background-size: 15%;
+  -moz-background-size: 15%;
+  -o-background-size: 15%;
+  -ms-background-size: 15%;
+  background-size: 15%;
+  background-color: #eee8d5;
+}
+#content #news h3 {
+  padding-top: 10px;
+  margin-top: 10px;
 }
 @media screen and (max-device-width: 480px) {
   #bar ul li {
@@ -222,84 +272,117 @@ header nav ul li a:hover {
   font-style: normal;
 }
 @font-face {
-  font-family: 'DroidSerifRegular';
-  src: url("../font/DroidSerif-Regular-webfont.eot");
-  src: url("../font/DroidSerif-Regular-webfont.woff") format('woff');
+  font-family: 'SourceSansProRegular';
+  src: url("../font/sourcesanspro-regular-webfont.eot");
+  src: url("../font/sourcesanspro-regular-webfont.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'DroidSerifItalic';
-  src: url("../font/DroidSerif-Italic-webfont.eot");
-  src: url("../font/DroidSerif-Italic-webfont.woff") format('woff');
+  font-family: 'SourceSansProSemibold';
+  src: url("../font/sourcesanspro-semibold-webfont.eot");
+  src: url("../font/sourcesanspro-semibold-webfont.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'DroidSerifBold';
-  src: url("../font/DroidSerif-Bold-webfont.eot");
-  src: url("../font/DroidSerif-Bold-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'DroidSerifBoldItalic';
-  src: url("../font/DroidSerif-BoldItalic-webfont.eot");
-  src: url("../font/DroidSerif-BoldItalic-webfont.woff") format('woff');
+  font-family: 'SourceSansProLight';
+  src: url("../font/sourcesanspro-light-webfont.eot");
+  src: url("../font/sourcesanspro-light-webfont.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @-webkit-keyframes fadeIn {
   0% {
+    -webkit-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -moz-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -o-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
   }
 
   100% {
+    -webkit-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -moz-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -o-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
   }
 }
 @-moz-keyframes fadeIn {
   0% {
+    -webkit-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -moz-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -o-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
   }
 
   100% {
+    -webkit-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -moz-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -o-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
   }
 }
 @-o-keyframes fadeIn {
   0% {
+    -webkit-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -moz-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -o-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
   }
 
   100% {
+    -webkit-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -moz-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -o-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
   }
 }
 @-ms-keyframes fadeIn {
   0% {
+    -webkit-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -moz-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -o-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
   }
 
   100% {
+    -webkit-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -moz-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -o-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
   }
 }
 @keyframes fadeIn {
   0% {
+    -webkit-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -moz-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -o-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
   }
 
   100% {
+    -webkit-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -moz-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -o-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
   }

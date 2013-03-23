@@ -41,30 +41,23 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'DroidSerifRegular';
-  src: url("../font/DroidSerif-Regular-webfont.eot");
-  src: url("../font/DroidSerif-Regular-webfont.woff") format('woff');
+  font-family: 'SourceSansProRegular';
+  src: url("../font/sourcesanspro-regular-webfont.eot");
+  src: url("../font/sourcesanspro-regular-webfont.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'DroidSerifItalic';
-  src: url("../font/DroidSerif-Italic-webfont.eot");
-  src: url("../font/DroidSerif-Italic-webfont.woff") format('woff');
+  font-family: 'SourceSansProSemibold';
+  src: url("../font/sourcesanspro-semibold-webfont.eot");
+  src: url("../font/sourcesanspro-semibold-webfont.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'DroidSerifBold';
-  src: url("../font/DroidSerif-Bold-webfont.eot");
-  src: url("../font/DroidSerif-Bold-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'DroidSerifBoldItalic';
-  src: url("../font/DroidSerif-BoldItalic-webfont.eot");
-  src: url("../font/DroidSerif-BoldItalic-webfont.woff") format('woff');
+  font-family: 'SourceSansProLight';
+  src: url("../font/sourcesanspro-light-webfont.eot");
+  src: url("../font/sourcesanspro-light-webfont.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }

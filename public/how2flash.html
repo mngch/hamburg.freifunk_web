@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf8">
+    <meta name="description" content="Freifunk ist ein Projekt, das versucht ein stadtweites Datennetz auf Basis von WLAN-Routern aufzubauen.">
+    <meta name="author" content="freifunk hamburg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hamburg.freifunk.net</title>
+    <link rel="stylesheet" href="./css/ffhh.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  </head>
+  <body>
+    <header><a href="./" class="title">
+        <h1 class="main">hamburg.freifunk.net</h1></a>
+      <nav>
+        <ul>
+          <li><a href="http://freifunk-gw01.hamburg.ccc.de/ffhhmap/geomap.html">Karte</a></li>
+          <li><a href="http://wiki.freifunk.net/Freifunk_Hamburg">Wiki</a></li>
+          <li><a href="mailto:kontakt@hamburg.freifunk.net">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+<div id="bar">
+  <h3>how2flash</h3>
+</div>
+<div id="content">
+  <h3><a name="eigener">Einen eigenen Router aufstellen</a></h3><p>Du möchtest am Freifunknetzwerk teilnehmen und einen eigenen Router aufstellen?
+Nichts leichter als das!</p>
+<p>Im Prinzip funktioniert Freifunk auf einer Vielzahl von Geräten,
+wir haben uns allerdings auf bestimmte Modelle spezialisiert, 
+um den Aufwand gering zu halten.<br>An dieser Stelle wollen wir erstmal nur zwei Router vorstellen:</p>
+<ul>
+<li>TP-Link TL-WR741N / TL-WR741ND</li>
+<li>TP-Link TL-WR841N / TL-WR841ND</li>
+<li>TP-Link TL-WR842ND</li>
+</ul>
+
+</div>
+  </body>
+  <script data-main="js/main" src="js/require.js"></script><script>protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://'; address = protocol + window.location.host + window.location.pathname + '/ws'; socket = new WebSocket(address);
+socket.onmessage = function(msg) { msg.data == 'reload' && window.location.reload() }</script>
+</html>
